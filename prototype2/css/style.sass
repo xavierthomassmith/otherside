@@ -67,7 +67,7 @@ body
 
   #summary
 
-.argument-container-max
+.sides
   display: flex
   color: #333
 
@@ -80,15 +80,34 @@ body
     font-size: 30px
     font-weight: 500
 
-  #text
-    line-height: 20px
-    font-size: 14px
-    font-weight: 400
+.argument-container
+  display: flex
+  color: #333
 
-.argument-container-min
-  display: none
+  figure
+    width: 50%
+    padding: 10px
+    margin-left: 40px
+    margin-right: 40px
+    margin-top: 20px
+    border-style: solid
+    border-width: 2px
+    border-color: #333
 
-.nav-bar-toggle, .responsive-menu
+    img
+      display: block
+      margin: auto
+      width: 10em
+      height: 8em
+
+    figcaption
+      padding: 10px
+      text-align: center
+      font-size: 15px
+      font-weight: 200
+
+
+  .nav-bar-toggle, .responsive-menu
     display: none
 
 @media (max-width: 700px)
@@ -97,41 +116,20 @@ body
     justify-content: space-between
     max-height: 50px
 
-    li
-      display: none
-
-  .responsive-menu
-    display: none
-    color: #333
-    margin-top: 15px
-    text-align: center
-    font-family: "Playfair Display", "serif"
-    font-size: 14px
-    font-weight: bolder
-
-    #dropdown
-      list-style: none
-      padding: 0
-
-      #items
-        padding: 10px
-
-      #items:hover
-        color: grey
-        cursor: pointer
-
-  .nav
     h1
       width: 90%
       max-width: 150px
       margin-left: 20px
-      margin-right: 50px
+      margin-right: 20px
       height: 50px
       line-height: 50px
       font-size: 18px
       color: white
       &:hover
         color: grey
+
+    li
+      display: none
 
     .nav-bar-toggle
       display: flex
@@ -158,6 +156,26 @@ body
     .nav-bar-toggle:hover
       opacity: 0.4
 
+  .responsive-menu
+    display: none
+    color: #333
+    margin-top: 15px
+    text-align: center
+    font-family: "Playfair Display", "serif"
+    font-size: 14px
+    font-weight: bolder
+
+    #dropdown
+      list-style: none
+      padding: 0
+
+      #items
+        padding: 10px
+
+      #items:hover
+        color: grey
+        cursor: pointer
+
   .container
     padding: 20px
     background-color: #eee
@@ -174,25 +192,25 @@ body
     #summary
       font-size: 13px
 
-  .argument-container-max
-    display: none
-
-  .argument-container-min
-    display: flex
-    flex-wrap: wrap
-    color: #333
-
+  .sides
     h3
-      width: 100%
       margin-left: 20px
       margin-right: 20px
-      font-size: 20px
-      font-weight: 500
+      font-size: 25px
 
-    #text
-      margin-left: 20px
-      margin-right: 20px
-      margin-bottom: 20px
-      line-height: 20px
-      font-size: 13px
-      font-weight: 400
+  .argument-container
+      figure
+        width: 50%
+        padding: 5px
+        margin-left: 20px
+        margin-right: 20px
+        margin-top: 10px
+
+        img
+          width: 5em
+          height: 4em
+
+        figcaption
+          padding: 5px
+          font-size: 10px
+          font-weight: 200
