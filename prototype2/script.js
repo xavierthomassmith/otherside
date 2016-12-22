@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $('.responsive-menu').hide();
+
   $(window).on('resize', function(){
     var win = $(this);
     if (win.width() > 700 && $('.responsive-menu').is(":visible")) {
