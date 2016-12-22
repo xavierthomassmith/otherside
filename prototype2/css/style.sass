@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+*
+  margin: 0
+
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  min-width: 320px
+
+.nav
+  display: flex
+  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%)
+  background-image:      -o-linear-gradient(top, #3c3c3c 0%, #222 100%)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222))
+  background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0)
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+  background-repeat: repeat-x
+  font-family: "Playfair Display", "serif"
+
+  h1
+    width: 15%
+    min-width: 150px
+    margin-left: 40px
+    margin-right: 40px
+    height: 50px
+    line-height: 50px
+    font-size: 18px
+    color: white
+    cursor: pointer
+    &:hover
+      color: grey
+
+  ul
+    display: flex
+    justify-content: flex-start
+    padding: 0
+    width: 85%
+    height: 50px
+    text-align: center
+    line-height: 50px
+    font-size: 14px
+    font-weight: 600
+    list-style: none
+
+  li
+    flex-grow: 1
+    width: 15%
+    max-width: 170px
+    color: grey
+    cursor: pointer
+    &:hover
+      color: white
+
+.container
+  padding: 40px
+  background-color: #eee
+  margin: 40px
+  font-size: 21px
+  font-weight: 200
+  color: #333
+
+  h2
+    font-size: 63px
+    font-weight: 500
+    padding-bottom: 10px
+
+  #summary
+
+.argument-container-max
+  display: flex
+  color: #333
+
+  h3
+    width: 50%
+    margin-left: 40px
+    margin-right: 40px
+    height: 50px
+    line-height: 50px
+    font-size: 30px
+    font-weight: 500
+
+  #text
+    line-height: 20px
+    font-size: 14px
+    font-weight: 400
+
+.argument-container-min
+  display: none
+
+.nav-bar-toggle, .responsive-menu
+    display: none
+
+@media (max-width: 700px)
+
+  .nav
+    justify-content: space-between
+    max-height: 50px
+
+    li
+      display: none
+
+  .responsive-menu
+    display: none
+    color: #333
+    margin-top: 15px
+    text-align: center
+
+    #dropdown
+      list-style: none
+      padding: 0
+
+      #items
+        padding: 10px
+
+      #items:hover
+        color: grey
+        cursor: pointer
+
+  .nav
+    h1
+      width: 90%
+      max-width: 150px
+      margin-left: 20px
+      margin-right: 50px
+      height: 50px
+      line-height: 50px
+      font-size: 18px
+      color: white
+      &:hover
+        color: grey
+
+    .nav-bar-toggle
+      display: flex
+      justify-content: flex-end
+      width: 10%
+      max-width: 30px
+      min-width: 30px
+      position: relative
+      margin-right: 25px
+      cursor: pointer
+
+    .nav-bar-toggle:before
+      display: flex
+      justify-content: flex-end
+      content: ""
+      position: absolute
+      left: 0
+      top: 13px
+      width: 30px
+      height: 2.5px
+      background: white
+      box-shadow: 0 19px 0 0 white, 0 9px 0 0 white
+
+    .nav-bar-toggle:hover
+      opacity: 0.4
+
+  .container
+    padding: 20px
+    background-color: #eee
+    margin: 20px
+    font-size: 21px
+    font-weight: 200
+    color: #333
+
+    h2
+      font-size: 25px
+      font-weight: 500
+      padding-bottom: 5px
+
+    #summary
+      font-size: 13px
+
+  .argument-container-max
+    display: none
+
+  .argument-container-min
+    display: flex
+    flex-wrap: wrap
+    color: #333
+
+    h3
+      width: 100%
+      margin-left: 20px
+      margin-right: 20px
+      font-size: 20px
+      font-weight: 500
+
+    #text
+      margin-left: 20px
+      margin-right: 20px
+      margin-bottom: 20px
+      line-height: 20px
+      font-size: 13px
+      font-weight: 400
