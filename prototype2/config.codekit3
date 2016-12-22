@@ -38,6 +38,22 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/images\/temp-v-emissions.png": {
+		"ft": 32768,
+		"iS": 102277,
+		"oA": 0,
+		"oAP": "\/images\/temp-v-emissions.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/temp-v-orbit.jpg": {
+		"ft": 16384,
+		"iS": 72940,
+		"oA": 0,
+		"oAP": "\/images\/temp-v-orbit.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,

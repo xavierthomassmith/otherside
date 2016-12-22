@@ -60,10 +60,10 @@ body {
     font-weight: 500;
     padding-bottom: 10px; }
 
-.argument-container-max {
+.sides {
   display: flex;
   color: #333; }
-  .argument-container-max h3 {
+  .sides h3 {
     width: 50%;
     margin-left: 40px;
     margin-right: 40px;
@@ -71,23 +71,71 @@ body {
     line-height: 50px;
     font-size: 30px;
     font-weight: 500; }
-  .argument-container-max #text {
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 400; }
 
-.argument-container-min {
-  display: none; }
-
-.nav-bar-toggle, .responsive-menu {
-  display: none; }
+.argument-container {
+  display: flex;
+  color: #333; }
+  .argument-container figure {
+    width: 50%;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333; }
+    .argument-container figure img {
+      display: block;
+      margin: auto;
+      width: 10em;
+      height: 8em; }
+    .argument-container figure figcaption {
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 200; }
+  .argument-container .nav-bar-toggle, .argument-container .responsive-menu {
+    display: none; }
 
 @media (max-width: 700px) {
   .nav {
     justify-content: space-between;
     max-height: 50px; }
+    .nav h1 {
+      width: 90%;
+      max-width: 150px;
+      margin-left: 20px;
+      margin-right: 20px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+      color: white; }
+      .nav h1:hover {
+        color: grey; }
     .nav li {
       display: none; }
+    .nav .nav-bar-toggle {
+      display: flex;
+      justify-content: flex-end;
+      width: 10%;
+      max-width: 30px;
+      min-width: 30px;
+      position: relative;
+      margin-right: 25px;
+      cursor: pointer; }
+    .nav .nav-bar-toggle:before {
+      display: flex;
+      justify-content: flex-end;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 30px;
+      height: 2.5px;
+      background: white;
+      box-shadow: 0 19px 0 0 white, 0 9px 0 0 white; }
+    .nav .nav-bar-toggle:hover {
+      opacity: 0.4; }
   .responsive-menu {
     display: none;
     color: #333;
@@ -104,39 +152,6 @@ body {
       .responsive-menu #dropdown #items:hover {
         color: grey;
         cursor: pointer; }
-  .nav h1 {
-    width: 90%;
-    max-width: 150px;
-    margin-left: 20px;
-    margin-right: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 18px;
-    color: white; }
-    .nav h1:hover {
-      color: grey; }
-  .nav .nav-bar-toggle {
-    display: flex;
-    justify-content: flex-end;
-    width: 10%;
-    max-width: 30px;
-    min-width: 30px;
-    position: relative;
-    margin-right: 25px;
-    cursor: pointer; }
-  .nav .nav-bar-toggle:before {
-    display: flex;
-    justify-content: flex-end;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 13px;
-    width: 30px;
-    height: 2.5px;
-    background: white;
-    box-shadow: 0 19px 0 0 white, 0 9px 0 0 white; }
-  .nav .nav-bar-toggle:hover {
-    opacity: 0.4; }
   .container {
     padding: 20px;
     background-color: #eee;
@@ -150,22 +165,20 @@ body {
       padding-bottom: 5px; }
     .container #summary {
       font-size: 13px; }
-  .argument-container-max {
-    display: none; }
-  .argument-container-min {
-    display: flex;
-    flex-wrap: wrap;
-    color: #333; }
-    .argument-container-min h3 {
-      width: 100%;
-      margin-left: 20px;
-      margin-right: 20px;
-      font-size: 20px;
-      font-weight: 500; }
-    .argument-container-min #text {
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      line-height: 20px;
-      font-size: 13px;
-      font-weight: 400; } }
+  .sides h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px; }
+  .argument-container figure {
+    width: 50%;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px; }
+    .argument-container figure img {
+      width: 5em;
+      height: 4em; }
+    .argument-container figure figcaption {
+      padding: 5px;
+      font-size: 10px;
+      font-weight: 200; } }
