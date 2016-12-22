@@ -1,1 +1,1 @@
-$(document).ready(function(){$(window).on("resize",function(){var e=$(this);e.width()>700&&$(".responsive-menu").is(":visible")&&$(".responsive-menu").toggle()}),$(".nav-bar-toggle").click(function(){$(".responsive-menu").toggle()})});
+$(document).ready(function(){$(".responsive-menu").hide(),$(window).on("resize",function(){var e=$(this);e.width()>700&&$(".responsive-menu").is(":visible")&&$(".responsive-menu").toggle()}),$(".nav-bar-toggle").click(function(){$(".responsive-menu").toggle()})});
